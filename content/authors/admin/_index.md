@@ -1,13 +1,10 @@
 ---
 # Display name
-title: 吳健雄
-
-# Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+title: Jianwei Jia
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Jianwei
+last_name: Jia
 
 # Status emoji
 status:
