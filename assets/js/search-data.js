@@ -30,65 +30,31 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
-        },{
-        id: 'social-email',
-        title: 'email',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:%6A%6A%69%61%37%30@%67%61%74%65%63%68.%65%64%75", "_blank");
-        },
-      },{
-        id: 'social-linkedin',
-        title: 'LinkedIn',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.linkedin.com/in/jianwei-jia", "_blank");
-        },
-      },{
-        id: 'social-orcid',
-        title: 'ORCID',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://orcid.org/0009000643533028", "_blank");
-        },
-      },{
-        id: 'social-researchgate',
-        title: 'ResearchGate',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.researchgate.net/profile/Jianwei-Jia/", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=Y7hpuy8AAAAJ", "_blank");
-        },
-      },{
-      id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("light");
-      },
-    },
-    {
-      id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("dark");
-      },
-    },
-    {
-      id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("system");
-      },
-    },];
+        },////   {
+  //     id: 'light-theme',
+  //     title: 'Change theme to light',
+  //     description: 'Change the theme of the site to Light',
+  //     section: 'Theme',
+  //     handler: () => {
+  //       setThemeSetting("light");
+  //     },
+  //   },
+  //   {
+  //     id: 'dark-theme',
+  //     title: 'Change theme to dark',
+  //     description: 'Change the theme of the site to Dark',
+  //     section: 'Theme',
+  //     handler: () => {
+  //       setThemeSetting("dark");
+  //     },
+  //   },
+  //   {
+  //     id: 'system-theme',
+  //     title: 'Use system default theme',
+  //     description: 'Change the theme of the site to System Default',
+  //     section: 'Theme',
+  //     handler: () => {
+  //       setThemeSetting("system");
+  //     },
+  //   },
+  //];
