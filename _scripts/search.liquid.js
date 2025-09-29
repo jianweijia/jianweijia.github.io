@@ -81,7 +81,7 @@ ninja.data = [
   {%- for collection in site.collections -%}
     {%- if collection.label != 'posts' -%}
       {%- for item in collection.docs -%}
-        {%- if item.nav == true -%}
+        {%- if p.nav -%}
           {
             {%- if item.inline -%}
               {%- assign title = item.content | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
