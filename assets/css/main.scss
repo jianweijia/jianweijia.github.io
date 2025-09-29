@@ -23,3 +23,24 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+
+// =======================
+// Custom overrides
+// =======================
+
+/* 控制头像下面的社交图标大小 */
+.social .contact-icons a i,
+.social .contact-icons a svg {
+  font-size: 40px;   // 修改图标大小（默认可能 30px）
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;     // 控制间距
+}
+
+/* 鼠标悬停效果 */
+.social .contact-icons a:hover {
+  transform: scale(1.2);
+  color: #007acc;    // 鼠标悬停时的颜色
+  transition: all 0.2s ease-in-out;
+}
