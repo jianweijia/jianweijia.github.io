@@ -44,3 +44,11 @@ $max-content-width: {{ site.max_width }};
   color: #007acc;    // 鼠标悬停时的颜色
   transition: all 0.2s ease-in-out;
 }
+
+/* 强化年份标题颜色 */
+h2.bibliography {
+  color: black !important;     /* 深灰或黑色 */
+  // font-weight: bold;          /* 加粗 */
+  opacity: 1 !important;      /* 去掉淡化 */
+  margin-top: 2rem;           /* 适当增加与上一组的间距 */
+}
