@@ -13,7 +13,7 @@
       "position": "Graduate Research Assistant",
       "startDate": "2023-08",
       "endDate": "present",
-      "summary":""
+      "summary": ""
     },
 
     {
@@ -21,7 +21,7 @@
       "position": "Graduate Research Assistant",
       "startDate": "2022-01",
       "endDate": "2022-08",
-      "summary":""
+      "summary": ""
     }
   ],
   "education": [
@@ -83,14 +83,7 @@
     {
       "name": "Code",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "System Verilog",
-        "Perl",
-        "C++",
-        "Python",
-        "Tcl",
-        "Labview"
-      ]
+      "keywords": ["System Verilog", "Perl", "C++", "Python", "Tcl", "Labview"]
     },
     {
       "name": "Software",
@@ -102,13 +95,10 @@
         "Altium Designer"
       ]
     },
-      {
+    {
       "name": "Technical",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Analog Circuit Design (Amplifier, comparator, etc.)",
-        "Digital Circuit Design (CIM, TCAM, superscalar processor, etc.)"
-      ]
+      "keywords": ["Analog Circuit Design (Amplifier, comparator, etc.)", "Digital Circuit Design (CIM, TCAM, superscalar processor, etc.)"]
     }
   ],
   "languages": [
@@ -122,6 +112,5 @@
       "fluency": "Native speaker",
       "icon": ""
     }
-
   ]
 }

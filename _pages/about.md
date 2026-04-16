@@ -26,7 +26,7 @@ latest_posts:
 ---
 
 <p align="justify">
-Jianwei Jia is currently a third-year Ph.D. student at the Georgia Institute of Technology, supervised by <a href="https://shimeng.ece.gatech.edu/professor/" target="_blank">Prof. Shimeng Yu</a>. He received the B.S. degree in Microelectronics from Nankai University in 2021 and the M.S.E. degree in VLSI from the University of Michigan - Ann Arbor, in 2023. 
+Jianwei Jia is currently a third-year Ph.D. student at the Georgia Institute of Technology, supervised by <a href="https://shimeng.ece.gatech.edu/professor/" target="_blank">Prof. Shimeng Yu</a>. He received the B.S. degree in Microelectronics from Nankai University in 2021 and the M.S.E. degree in VLSI from the University of Michigan - Ann Arbor, in 2023.
 
 <p align="justify">
 His research focuses on leveraging emerging non-volatile devices, such as ferroelectric field-effect transistors (FeFETs), ferroelectric capacitors (FeCAPs), and resistive RAM (RRAM), to enhance the performance and expand the functionality of conventional CMOS circuits. His work spans both analog and digital design domains, including computing-in-memory (CIM), ternary content-addressable memory (TCAM), and reconfigurable analog circuit architectures.
@@ -72,7 +72,7 @@ He has led more than five chip tapeouts and has extensive experience with both o
 <p>&nbsp;</p>
 <p>&nbsp;</p> -->
 
-<!-- 
+<!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
