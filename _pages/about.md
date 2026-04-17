@@ -33,7 +33,7 @@ His research focuses on leveraging emerging non-volatile devices, such as ferroe
 </p>
 
 <p align="justify">
-He has led more than five chip tapeouts and has extensive experience with both open-source and commercial EDA tools. His design work spans multiple technology nodes and PDKs, including SkyWater130, Ti LBC7, GF 28SLPe (FEOL FeFET platform), GF 22FDX (BEOL FeCAP platform), TSMC N16, and TSMC N7. He has published in leading conferences such as ASPDAC, ISCAS, and MWSCAS, as well as journals including IEEE JXCDC and IEEE EDL. He is currently a Graduate Student Member of the IEEE and serves as a reviewer for several IEEE journals, including TCAS-II and IEEE Trans. Comput.
+He has led more than five chip tapeouts and has extensive experience with both open-source and commercial EDA tools. His design work spans multiple technology nodes and PDKs, including SkyWater130, Ti LBC7, GF 28SLPe (FEOL FeFET platform), GF 22FDX (BEOL FeCAP platform), TSMC N16, and TSMC N7. He has published in leading conferences such as ASPDAC, ISCAS, and MWSCAS, as well as journals including IEEE JXCDC and IEEE EDL. He is currently a Graduate Student Member of the IEEE and serves as a reviewer for several IEEE journals, including TCAS-II, EDL and IEEE Trans. Comput.
 
 <!-- He received the B.S. degree in Microelectronics from Nankai University in 2021 and the M.S.E. degree in VLSI from the University of Michigan, Ann Arbor in 2023. -->
 </p>

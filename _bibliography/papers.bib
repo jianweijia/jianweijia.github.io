@@ -1,7 +1,7 @@
 ---
 ---
 
-% First Author Journal
+% First Author Journal-----------------------------------------------------------------------
 @ARTICLE{11059896,
   author={Jia, Jianwei and Jia, Zhenge and Phadke, Omkar and Shi, Yiyu and Yu, Shimeng},
   journal={IEEE Journal on Exploratory Solid-State Computational Devices and Circuits},
@@ -19,7 +19,7 @@
   google_scholar_id={2osOgNQ5qMEC}
   }
 
-% First Author Conference
+% First Author Conference-----------------------------------------------------------------------
 @INPROCEEDINGS{10658827,
   author={Jia, Jianwei and Jia, Zhenge and Phadke, Omkar and Choe, Gihun and Shi, Yiyu and Yu, Shimeng},
   booktitle={2024 IEEE 67th International Midwest Symposium on Circuits and Systems (MWSCAS)}, 
@@ -37,7 +37,8 @@
   google_scholar_id={u5HHmVD_uO8C}
   }
 
-% co - First Author Journal
+% co - First Author Journal-----------------------------------------------------------------------
+@comment{
 @misc{huang2025hardware,
     abbr={arXiv},
     title={Hardware Acceleration of Kolmogorov-Arnold Network (KAN) in Large-Scale Systems},
@@ -49,9 +50,26 @@
     arxiv={2509.05937},
     primaryClass={cs.AR},
     google_scholar_id={qjMakFHDy7sC}
+  }
 }
 
-% co - First Author Conference
+@ARTICLE{11466333,
+  author={Huang*, Wei-Hsing and Jia*, Jianwei and Kong, Yuyao and Waqar, Faaiq and Wen, Tai-Hao and Chang, Meng-Fan and Yu, Shimeng},
+  journal={IEEE Transactions on Very Large Scale Integration (VLSI) Systems}, 
+  title={Hardware Acceleration of Kolmogorov–Arnold Network (KAN) in Large-Scale Systems},
+  abbr={TVLSI},
+  year={2026},
+  month={April},
+  volume={},
+  number={},
+  pages={1-14},
+  abstract={Recent developments have introduced Kolmogorov– Arnold networks (KANs), an innovative architectural paradigm capable of replicating conventional deep neural network (DNN) capabilities while utilizing significantly reduced parameter counts through the employment of parameterized B-spline functions incorporating trainable coefficients. Nevertheless, the B-spline functional components inherent to KAN architectures introduce distinct hardware acceleration complexities. While B-spline function evaluation can be accomplished through lookup table (LUT) implementations that directly encode functional mappings, thus minimizing computational overhead, such approaches continue to demand considerable circuit infrastructure, including LUTs, multiplexers, decoders, and associated components. This work presents an algorithm-hardware co-design approach for KAN acceleration. At the algorithmic level, techniques include alignment–symmetry and PowerGap KAN hardware-aware quantization, KAN sparsity-aware mapping strategy, and circuit-level techniques include N:1 time modulation dynamic voltage input generator with analog-compute-in-memory (ACIM) circuits. Furthermore, this work conducts comprehensive evaluations on large-scale KAN networks to validate the proposed methodologies. Nonideality factors, including partial sum deviations arising from process variations, have been evaluated with the statistics measured from the TSMC 22-nm RRAM-ACIM prototype chips. Utilizing optimally determined KAN hyperparameters in conjunction with circuit optimizations implemented and evaluated at the 22-nm technology node, despite the model sizes for large-scale tasks in this work increasing by 435 K $\times $  to 756 K $\times $  compared to tiny-scale tasks in previous work, the area overhead increases by only 26 K $\times $  to 40 K $\times $ , with power consumption rising by merely  $48\times $  to  $93\times $ , while accuracy degradation remains minimal at 0.11%–0.22%, thereby demonstrating the scaling potential of our proposed architecture.},
+  keywords={Broadcasting;Broadcast technology;Circuits;Very large scale integration;Recommender systems;System-on-chip;Circuits and systems;Information filtering;Neuromorphics;Circuit synthesis;Algorithm-hardware co-design;compute-in-memory (CIM);Kolmogorov–Arnold networks (KANs);quantization;resistive random access memory (RRAM)},
+  doi={10.1109/TVLSI.2026.3673356},
+  google_scholar_id={}
+  }
+
+% co - First Author Conference-----------------------------------------------------------------------
 @INPROCEEDINGS{10.1145/3658617.3697677,
   author = {Huang*, Wei-Hsing and Jia*, Jianwei and Kong, Yuyao and Waqar, Faaiq and Wen, Tai-Hao and Chang, Meng-Fan and Yu, Shimeng},
   title = {Hardware Acceleration of Kolmogorov-Arnold Network (KAN) for Lightweight Edge Inference},
@@ -71,11 +89,75 @@
   location = {Tokyo, Japan},
   series = {ASPDAC '25},
   google_scholar_id={u-x6o8ySG0sC}
-}
+  }
 
-% coleboration Journal
+% coleboration Journal-----------------------------------------------------------------------
+@ARTICLE{10852295,
+  author={Vadlamani, Madhav and Jia, Jianwei and Xie, Tian and Luo, Yuan-Chun and Lee, Junmo and Li, Shaolan and Yu, Shimeng},
+  journal={IEEE Electron Device Letters}, 
+  title={Capacitive Crossbar Array for Solving Matrix Equations in One-Shot},
+  abbr={EDL},
+  year={2025},
+  month={January},
+  volume={46},
+  number={3},
+  pages={389-392},
+  abstract={The resistive crossbar with a feedback loop has been proposed for solving matrix equations in a linear system with the current-domain computation. But the resistive approach suffers from high static power especially when the resistance is low. To overcome the challenges, we leverage C-V asymmetry in the ferroelectric capacitors of a crossbar array for the energy-efficient charge-domain computation. In this work, we demonstrate that such a capacitive crossbar when operated in negative feedback could solve the matrix problem  $Ax = {b}$  where x is the unknown vector. A comparative study shows a much lower power consumption (~1000 $\times $ ) for such a matrix solver when compared to the resistive crossbar counterpart.},
+  keywords={Capacitors;Capacitance;Vectors;Power demand;Voltage measurement;Voltage;Accuracy;Mathematical models;Switches;Noise;Matrix equations;crossbar;HZO nvCap;charge domain;negative feedback loop},
+  doi={10.1109/LED.2025.3533607},
+  google_scholar_id={d1gkVwhDpl0C}
+  }
 
-% coleboration Conference
+@ARTICLE{11277307,
+  author={Garg, Vaidehi and Jia, Jianwei and Phadke, Omkar and Yu, Shimeng},
+  journal={IEEE Solid-State Circuits Letters}, 
+  title={A 28-nm FeFET Compute-in-Memory Macro With 64×64 Array Size and On-Chip 4-Bit Flash ADC}, 
+  abbr={SSCL},
+  year={2025},
+  month={December},
+  volume={9},
+  number={},
+  pages={13-16},
+  abstract={Compute-in-memory (CIM) using emerging nonvolatile memory devices is a promising candidate for energy-efficient deep neural network (DNN) inference at the edge. Ferroelectric field-effect transistors (FeFETs) have recently gained attention as nonvolatile, CMOS-compatible devices with a higher on/off ratio and lower read and write energy compared to resistive random-access memory (RRAM). This work demonstrates a 4-kb FeFET-CIM macro fabricated in the GlobalFoundries 28-nm high-k metal gate (HKMG) process. The macro consists of a  $64\times 64$  FeFET array with peripheral circuits for program, erase, and current-mode CIM operations and eight 4-bit Flash ADCs to quantize the analog partial sums. The proposed design achieves an energy efficiency of 346.6 TOPS/W for  $1\times 1$ b MAC, an inference accuracy of 85.2% for 16 row parallel compute with 4-bit ADC resolution, and 89.1% with 8 row parallel compute with 3-bit resolution, compared to a software baseline of 89.7% on the VGG-8 model for CIFAR-10.},
+  keywords={FeFETs;Computer architecture;Accuracy;Programming;Microprocessors;Logic gates;In-memory computing;Quantization (signal);Vectors;Voltage;Compute-in-memory (CIM);deep neural network (DNN) inference;emerging nonvolatile memory;ferroelectric field-effect transistor (FeFET)},
+  doi={10.1109/LSSC.2025.3640522},
+  google_scholar_id={IjCSPb-OGe4C}
+  }
+
+@ARTICLE{11424387,
+  author={Vadlamani, Madhav and Chakraborty, Dyutimoy and Jia, Jianwei and Mulaosmanovic, Halid and Duenkel, Stefan and Beyer, Sven and Datta, Suman and Yu, Shimeng},
+  journal={IEEE Transactions on Electron Devices}, 
+  title={Cryogenic Characterization of Ferroelectric Nonvolatile Capacitors}, 
+  abbr={TED},
+  year={2026},
+  month={April},
+  volume={73},
+  number={4},
+  pages={2511-2514},
+  abstract={Ferroelectric-based capacitive crossbar arrays have been proposed for energy-efficient in-memory computing in the charge domain. They combat the challenges like sneak paths and high static power faced by resistive crossbar arrays but are susceptible to thermal noise limiting the effective number of bits (ENOBs) for the weighted sum. A direct way to reduce this thermal noise is by lowering the temperature, as thermal noise is proportional to temperature. In this work, we first characterize the nonvolatile capacitors (nvCAPs) on a foundry 28-nm platform at cryogenic temperatures to evaluate the memory window (MW), on state retention as a function of temperature down to 77 K, and then use the calibrated device models to simulate the capacitive crossbar arrays in SPICE at lower temperatures to demonstrate higher ENOB (~5 bits) for  $128\times 128$  multiply-and-accumulate (MAC) operations.},
+  keywords={Cryogenics;Thermal noise;Capacitors;Capacitance;Nonvolatile memory;Temperature;Logic gates;Stress;Signal to noise ratio;Pulse measurements;Crossbar array;cryogenic characterization;effective number of bit (ENOB);ferroelectric capacitor;thermal noise},
+  doi={10.1109/TED.2026.3669147},
+  google_scholar_id={UeHWp8X0CEIC}
+  }
+
+@ARTICLE{11457631,
+  author={Chen, Matthew and Garg, Vaidehi and Jia, Jianwei and Sonawane, Jay and Phadke, Omkar and Yu, Shimeng},
+  journal={IEEE Open Journal of the Solid-State Circuits Society}, 
+  title={Non-Volatile Digital Compute-in-Memory Macro with Ferroelectric FET-based Voltage Divider Weight Cells Featuring Power-Gating}, 
+  abbr={OJSSCS},
+  year={2026},
+  month={March},
+  volume={},
+  number={},
+  pages={1-1},
+  abstract={Digital compute-in-memory (DCIM) architectures have shown great potential for AI/ML inference by minimizing energy-intensive data movement and increasing processing parallelism while providing lossless computations in hardware. Prior works have utilized conventional memories such as SRAM for weight storage, which are volatile and may consume excess standby power due to high cell leakage. In this work, we present a non-volatile DCIM (nvDCIM) macro with embedded ferroelectric field-effect transistors (FeFET) used as weight storage for low-power inference and applications at the edge. Our proposed dual n-type FeFET bitcell provides a voltage-domain output through the voltage divider effect, enabling it to directly drive the DCIM architecture’s CMOS adder trees with a binary voltage output. The FeFET-based bitcell’s non-volatility further enables power-gating to eliminate idle power in the design with instant on/off operations, removing the need for time-consuming weight reloading. When powered, the bitcell demonstrates low standby power ( 6.25 pW @ 0.8 V supply) allowing for competitive active energy efficiency with conventional DCIM designs. For 4b×4b multiply-accumulate (MAC) operations, our 4 Kb macro taped out in the GlobalFoundries 28 nm process achieves 106.6TOPS/W operation at 0.8 V supply with minimal accuracy loss (-0.11%) and enables -77.7% total power reduction when at low activity (e.g. 1% activity factor). Additionally, a dual p-type FeFET cell is proposed to further boost area-efficiency. Further analysis is provided to evaluate sources of inaccuracy in the taped-out bitcell, tradeoffs between various bitcell structures and implementations for FeFET-based DCIM, as well as comparison to existing analog and digital CIM designs and future architectures.},
+  keywords={Solid state circuits;Compute-in-Memory;Digital Compute-in-Memory;Edge AI;Ferroelectric Field-Effect-Transistor;Non-Volatile Memory},
+  doi={10.1109/OJSSCS.2026.3678878},
+  google_scholar_id={}
+  }
+
+
+% coleboration Conference-----------------------------------------------------------------------
 
 @INPROCEEDINGS{11043817,
   author={Kong, Yuyao and Jia, Jianwei and Lu, Anni and Waqar, Faaiq and Luo, Yuan-Chun and Li, Hai and Young, Ian and Yu, Shimeng},
@@ -91,22 +173,6 @@
   keywords={Semiconductor device modeling;Annealing;Computational modeling;Noise;Random access memory;Simulated annealing;Traveling salesman problems;In-memory computing;Integrated circuit modeling;Optimization;Combinatorial optimization problem;simulated annealing;digital compute-in-memory;Ising model;ferroelectric;non-volatile SRAM},
   doi={10.1109/ISCAS56072.2025.11043817},
   google_scholar_id={9yKSN-GCB0IC}
-  }
-
-@ARTICLE{10852295,
-  author={Vadlamani, Madhav and Jia, Jianwei and Xie, Tian and Luo, Yuan-Chun and Lee, Junmo and Li, Shaolan and Yu, Shimeng},
-  journal={IEEE Electron Device Letters}, 
-  title={Capacitive Crossbar Array for Solving Matrix Equations in One-Shot},
-  abbr={EDL},
-  year={2025},
-  month={January},
-  volume={46},
-  number={3},
-  pages={389-392},
-  abstract={The resistive crossbar with a feedback loop has been proposed for solving matrix equations in a linear system with the current-domain computation. But the resistive approach suffers from high static power especially when the resistance is low. To overcome the challenges, we leverage C-V asymmetry in the ferroelectric capacitors of a crossbar array for the energy-efficient charge-domain computation. In this work, we demonstrate that such a capacitive crossbar when operated in negative feedback could solve the matrix problem  $Ax = {b}$  where x is the unknown vector. A comparative study shows a much lower power consumption (~1000 $\times $ ) for such a matrix solver when compared to the resistive crossbar counterpart.},
-  keywords={Capacitors;Capacitance;Vectors;Power demand;Voltage measurement;Voltage;Accuracy;Mathematical models;Switches;Noise;Matrix equations;crossbar;HZO nvCap;charge domain;negative feedback loop},
-  doi={10.1109/LED.2025.3533607},
-  google_scholar_id={d1gkVwhDpl0C}
   }
 
 
