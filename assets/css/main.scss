@@ -58,3 +58,9 @@ h2.bibliography {
   background-color: var(--global-theme-color);
   color: #fff;
 }
+
+/* 让 publications 内容列占满剩余宽度（与 news 对齐）*/
+.publications .col-sm-8 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
