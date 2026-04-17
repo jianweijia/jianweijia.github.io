@@ -22,6 +22,7 @@ This tapeout includes two co-fabricated structures on the GlobalFoundries 28 nm 
 ## Circuit 1: aF-Resolution nvCAP Characterization (CVCM Macro)
 
 ---
+
 ## Circuit 2: Non-Volatile DCIM Macro
 
 ### Architecture
@@ -49,7 +50,6 @@ This tapeout includes two co-fabricated structures on the GlobalFoundries 28 nm 
 ### Key Innovation
 
 The dual n-type FeFET voltage-divider bitcell clamps the output to ~V_DD (logic "1") or ~V_SS (logic "0") depending on the stored polarization state, enabling lossless, amplifier-free binary readout directly into the CMOS adder tree. Non-volatility supports power-gating with no weight-reload penalty — a key advantage for edge AI inference at low activity factors.
-
 
 ---
 
