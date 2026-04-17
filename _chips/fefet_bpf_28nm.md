@@ -6,7 +6,6 @@ img: assets/img/chips/fefet_bpf_28nm.jpg
 tech: "GF 28nm FeFET"
 year: 2024
 importance: 2
-related_publications: true
 ---
 
 ## Overview
@@ -22,5 +21,5 @@ This chip implements an ultralow-power, high-resolution, reconfigurable three-st
 
 ## Publications
 
-{% cite 11059896 %}
-{% cite 10658827 %}
+{% reference 11059896 %}
+{% reference 10658827 %}
