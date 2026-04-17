@@ -8,6 +8,8 @@ img_die: assets/img/chips/2025_dcim_cap_measure_die.png
 tech: "GF 28nm FeFET"
 year: 2025
 importance: 1
+related_publications: true
+related_publications_title: "Publications"
 ---
 
 ## Overview
@@ -54,4 +56,4 @@ The dual n-type FeFET voltage-divider bitcell clamps the output to ~V_DD (logic 
 
 ## Publications
 
-{% reference 11457631 %}
+{% cite 11457631 %}
