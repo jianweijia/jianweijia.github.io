@@ -1,8 +1,10 @@
 ---
 layout: page
-title: "FeFET-CIM Macro (28nm)"
+title: "ACIM Macro - FeFET(PDK: GF28SLPe)"
 description: "4-kb FeFET compute-in-memory macro with 64×64 crossbar array and on-chip 4-bit Flash ADC."
-img: assets/img/chips/fefet_cim_28nm.jpg
+img_gds: assets/img/chips/2024_fefet_acim_gds.png
+img_die: assets/img/chips/2024_fefet_acim_die.JPG
+
 tech: "GF 28nm FeFET"
 year: 2024
 importance: 1
