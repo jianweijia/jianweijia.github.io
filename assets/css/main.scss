@@ -52,3 +52,9 @@ h2.bibliography {
   opacity: 1 !important;      /* 去掉淡化 */
   margin-top: 2rem;           /* 适当增加与上一组的间距 */
 }
+
+/* chip gallery badge 跟随主题色 */
+.badge-secondary {
+  background-color: var(--global-theme-color);
+  color: #fff;
+}
