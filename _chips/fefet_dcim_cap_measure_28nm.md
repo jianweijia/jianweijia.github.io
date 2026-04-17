@@ -55,4 +55,4 @@ The dual n-type FeFET voltage-divider bitcell clamps the output to ~V_DD (logic 
 
 ## Publications
 
-{% cite 11457631 %}
+{% reference 11457631 %}
