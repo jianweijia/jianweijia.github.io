@@ -8,8 +8,6 @@ img_die: assets/img/chips/2025_dcim_cap_measure_die.png
 tech: "GF 28nm FeFET"
 year: 2025
 importance: 1
-related_publications: true
-related_publications_title: "Publications"
 ---
 
 ## Overview
@@ -56,4 +54,4 @@ The dual n-type FeFET voltage-divider bitcell clamps the output to ~V_DD (logic 
 
 ## Publications
 
-{% cite 11457631 %}
+M. Chen, V. Garg, **J. Jia**, J. Sonawane, O. Phadke, S. Yu, "Non-Volatile Digital Compute-in-Memory Macro with Ferroelectric FET-based Voltage Divider Weight Cells Featuring Power-Gating," _IEEE Open Journal of the Solid-State Circuits Society_, 2026. [[DOI]](https://doi.org/10.1109/OJSSCS.2026.3678878)

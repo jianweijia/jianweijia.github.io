@@ -8,8 +8,6 @@ img_die: assets/img/chips/2024_fefet_acim_die.JPG
 tech: "GF 28nm FeFET"
 year: 2024
 importance: 2
-related_publications: true
-related_publications_title: "Publications"
 ---
 
 ## Overview
@@ -24,4 +22,4 @@ This chip implements a 4-kb FeFET-based compute-in-memory (CIM) macro fabricated
 
 ## Publications
 
-{% cite 11277307 %}
+V. Garg, **J. Jia**, O. Phadke, S. Yu, "A 28-nm FeFET Compute-in-Memory Macro With 64×64 Array Size and On-Chip 4-Bit Flash ADC," _IEEE Solid-State Circuits Letters_, 2025. [[DOI]](https://doi.org/10.1109/LSSC.2025.3640522)
