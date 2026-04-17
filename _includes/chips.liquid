@@ -1,13 +1,42 @@
 <div class="col">
   <a href="{{ chip.url | relative_url }}">
     <div class="card h-100 hoverable">
-      {% if chip.img %}
+      {% if chip.img_gds or chip.img_die %}
+        <div class="row no-gutters">
+          {% if chip.img_gds %}
+            <div class="{% if chip.img_die %}col-6{% else %}col-12{% endif %}">
+              {%
+                include figure.liquid
+                loading="eager"
+                path=chip.img_gds
+                sizes="150px"
+                alt="GDS layout"
+                class="card-img-top"
+              %}
+              <p class="text-center small text-muted mb-0">GDS</p>
+            </div>
+          {% endif %}
+          {% if chip.img_die %}
+            <div class="{% if chip.img_gds %}col-6{% else %}col-12{% endif %}">
+              {%
+                include figure.liquid
+                loading="eager"
+                path=chip.img_die
+                sizes="150px"
+                alt="Die photo"
+                class="card-img-top"
+              %}
+              <p class="text-center small text-muted mb-0">Die Photo</p>
+            </div>
+          {% endif %}
+        </div>
+      {% elsif chip.img %}
         {%
           include figure.liquid
           loading="eager"
           path=chip.img
           sizes="250px"
-          alt="chip die photo"
+          alt="chip photo"
           class="card-img-top"
         %}
       {% endif %}
