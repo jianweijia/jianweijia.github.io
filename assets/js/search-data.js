@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-chip-gallery",
+          title: "chip gallery",
+          description: "Silicon chips I have designed and taped out.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/chips/";
+          },
         },{id: "nav-news",
           title: "news",
           description: "",
