@@ -142,6 +142,10 @@ newsletter:
 collections:
   books:
     output: false
+  chips:
+    output: true
+    defaults:
+      layout: page
   news:
     defaults:
       layout: post

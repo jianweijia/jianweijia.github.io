@@ -1,0 +1,30 @@
+<div class="col">
+  <a href="{{ chip.url | relative_url }}">
+    <div class="card h-100 hoverable">
+      {% if chip.img %}
+        {%
+          include figure.liquid
+          loading="eager"
+          path=chip.img
+          sizes="250px"
+          alt="chip die photo"
+          class="card-img-top"
+        %}
+      {% endif %}
+      <div class="card-body">
+        <h2 class="card-title">{{ chip.title }}</h2>
+        {% if chip.tech or chip.year %}
+          <p class="card-text">
+            {% if chip.tech -%}
+              <span class="badge badge-pill badge-secondary">{{ chip.tech }}</span>
+            {%- endif %}
+            {% if chip.year -%}
+              <span class="badge badge-pill badge-secondary">{{ chip.year }}</span>
+            {%- endif %}
+          </p>
+        {% endif %}
+        <p class="card-text">{{ chip.description }}</p>
+      </div>
+    </div>
+  </a>
+</div>
