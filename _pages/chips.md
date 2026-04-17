@@ -1,6 +1,6 @@
 ---
 layout: page
-title: chip gallery
+title: chips
 permalink: /chips/
 description: Silicon chips I have designed and taped out.
 nav: true
