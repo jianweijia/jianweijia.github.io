@@ -8,7 +8,6 @@ img_die: assets/img/chips/2025_dcim_cap_measure_die.png
 tech: "GF 28nm FeFET"
 year: 2025
 importance: 1
-related_publications: true
 ---
 
 ## Overview

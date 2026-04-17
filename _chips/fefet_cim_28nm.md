@@ -7,7 +7,7 @@ img_die: assets/img/chips/2024_fefet_acim_die.JPG
 
 tech: "GF 28nm FeFET"
 year: 2024
-importance: 1
+importance: 2
 ---
 
 ## Overview
