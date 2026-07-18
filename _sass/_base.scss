@@ -195,6 +195,10 @@ ul.task-list input[type="checkbox"] {
 .profile {
   width: 100%;
 
+  figure {
+    margin-bottom: 0;
+  }
+
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -217,7 +221,7 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 34%;
 
     .address {
       p {
@@ -402,6 +406,9 @@ ul.task-list input[type="checkbox"] {
 
   .contact-icons {
     font-size: 4rem;
+    line-height: 1;
+    margin-top: -0.75rem;
+    margin-bottom: 0.25rem;
 
     a {
       img {
@@ -678,6 +685,35 @@ footer.sticky-bottom {
     }
   }
 
+  // horizontal "strip" card: images left, text right, one chip per row
+  .chip-strip {
+    .chip-strip-media {
+      padding: 1rem; // keep the images off the card edges
+    }
+
+    .chip-strip-media > .row {
+      margin: 0;
+    }
+
+    // small gap between the GDS and die-photo thumbnails
+    .chip-strip-media .row > [class*="col-"] {
+      padding: 0 0.4rem;
+    }
+
+    .chip-strip-media .card-img {
+      height: 100%;
+      min-height: 170px;
+      max-height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .chip-strip-media figure {
+      margin: 0;
+      height: calc(100% - 1.4rem); // leave room for the GDS / Die Photo label
+    }
+  }
+
   .col {
     padding-bottom: 1rem;
   }
@@ -699,6 +735,134 @@ footer.sticky-bottom {
 }
 
 // Publications
+
+// Space the homepage news block from the section that follows it
+.news {
+  margin-bottom: 3rem;
+}
+
+// Scrollable homepage section (e.g. selected publications)
+.scrollable-section {
+  max-height: 22rem;
+  overflow-y: auto;
+  overflow-x: hidden; // vertical scroll only; content wraps to fit width
+  // absorb the negative side margins of the inner Bootstrap .row so nothing
+  // overflows horizontally (otherwise a horizontal scrollbar appears)
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-bottom: 3rem; // breathing room before the chip gallery
+  // trim the leading margin of the first nested block so it hugs the top
+  .publications {
+    margin-top: 0;
+  }
+}
+
+// Chip gallery (homepage): each chip is a card with GDS + die-photo thumbnails
+.chip-gallery {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+
+  .chip-card {
+    display: flex;
+    flex-direction: column;
+    // content box = the two thumbnails (2 * 130px + 0.5rem gap); padding sits outside
+    box-sizing: content-box;
+    width: 268px;
+    padding: 1rem 1rem 0.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--global-text-color);
+    // frosted-glass (glassmorphism): translucent film + blur of whatever is behind
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.2));
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.65),
+      0 4px 14px rgba(0, 0, 0, 0.12),
+      0 10px 24px rgba(0, 0, 0, 0.08);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover {
+      text-decoration: none;
+      transform: translateY(-7px);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.65),
+        0 16px 32px rgba(0, 0, 0, 0.2),
+        0 8px 14px rgba(0, 0, 0, 0.12);
+      border-color: var(--global-theme-color);
+
+      .chip-name {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .chip-images {
+    display: flex;
+    gap: 0.5rem;
+
+    figure {
+      margin: 0;
+    }
+  }
+
+  .chip-thumb {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  // per-image label (GDS / Die Photo)
+  .caption {
+    margin-top: 0.35rem;
+    margin-bottom: 0; // cancel the global 1.5rem so the title sits close
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .chip-meta {
+    margin-top: 0.6rem;
+    text-align: center;
+    line-height: 1.35;
+
+    .chip-name {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--global-text-color);
+    }
+
+    .chip-year {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// Frosted-glass chip cards in dark mode: darker translucent film, faint edges
+html[data-theme="dark"] .chip-gallery .chip-card {
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+  background-color: rgba(30, 30, 36, 0.4);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 4px 14px rgba(0, 0, 0, 0.45),
+    0 10px 24px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      0 16px 32px rgba(0, 0, 0, 0.55),
+      0 8px 14px rgba(0, 0, 0, 0.35);
+  }
+}
 
 .publications {
   margin-top: 2rem;
@@ -1422,4 +1586,80 @@ figure.cover {
   a.cover-link:hover {
     color: #23212d !important;
   }
+}
+
+/*******************************************************************************
+ * Apple-style typography & surfaces
+ ******************************************************************************/
+
+// shrink the whole page uniformly to 80% of its original size
+body {
+  zoom: 0.8;
+}
+
+body {
+  // SF Pro on Apple devices, graceful system fallbacks elsewhere
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Text",
+    "SF Pro Display",
+    "Helvetica Neue",
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
+
+// tight, semibold headings — the hallmark of Apple's display type
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.post .post-title,
+.card-title {
+  font-weight: 600;
+  letter-spacing: -0.022em;
+}
+
+.post-header .post-title {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+// softer, more generous corner radius on imagery (Apple-like)
+.profile img {
+  border-radius: 14px !important;
+  cursor: pointer;
+  transition:
+    transform 0.35s cubic-bezier(0.28, 0.11, 0.32, 1),
+    box-shadow 0.35s ease,
+    filter 0.35s ease;
+
+  // subtle highlight on hover
+  &:hover {
+    transform: scale(1.025);
+    filter: brightness(1.06);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  }
+}
+
+// more compact bio text on the about page (justified intro paragraphs)
+p[align="justify"] {
+  line-height: 1.4;
+  margin-bottom: 0.55rem;
+}
+
+// smoother, springier hover transitions site-wide
+a,
+.card,
+.btn,
+.chip-card {
+  transition-timing-function: cubic-bezier(0.28, 0.11, 0.32, 1);
 }

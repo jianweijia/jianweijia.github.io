@@ -1,0 +1,19 @@
+<div class="chip-gallery">
+  {% assign gallery_chips = site.chips | sort: "year" | reverse %}
+  {% for chip in gallery_chips %}
+    <a class="chip-card" href="{{ chip.url | relative_url }}">
+      <div class="chip-images">
+        {% if chip.img_gds %}
+          {% include figure.liquid path=chip.img_gds class="chip-thumb rounded z-depth-1" caption="GDS" alt="GDS layout" %}
+        {% endif %}
+        {% if chip.img_die %}
+          {% include figure.liquid path=chip.img_die class="chip-thumb rounded z-depth-1" caption="Die Photo" alt="Die photo" %}
+        {% endif %}
+      </div>
+      <div class="chip-meta">
+        <span class="chip-name">{{ chip.short_title | default: chip.title }}</span>
+        <span class="chip-year">{{ chip.year }}</span>
+      </div>
+    </a>
+  {% endfor %}
+</div>

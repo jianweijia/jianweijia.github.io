@@ -26,17 +26,26 @@ layout: default
             {% assign profile_image_class = 'img-fluid z-depth-1
       rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.34}}px, (min-width: 576px)
+      34vw, 95vw"{% endcapture %}
+          {%- comment -%} Link the photo to the CV PDF (filename taken from the /cv/ page) {%- endcomment -%}
+          {% assign cv_page = site.pages | where: 'permalink', '/cv/' | first %}
+          {% if cv_page.cv_pdf contains '://' %}
+            {% assign cv_pdf_url = cv_page.cv_pdf %}
+          {% elsif cv_page.cv_pdf %}
+            {% assign cv_pdf_url = cv_page.cv_pdf | prepend: 'assets/pdf/' | replace: ' ', '%20' | relative_url %}
+          {% endif %}
+          {% if cv_pdf_url %}<a href="{{ cv_pdf_url }}" target="_blank" rel="noopener" title="View my CV (PDF)">{% endif %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
           %}
+          {% if cv_pdf_url %}</a>{% endif %}
         {% endif %}
 
         <!-- Social -->
         {% if page.social %}
-          <div class="social mt-3 text-center">
+          <div class="social mt-1 text-center">
             <div class="contact-icons">{% include social.liquid %}</div>
             <div class="contact-note">{{ site.contact_note }}</div>
           </div>
@@ -71,7 +80,15 @@ layout: default
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
-      {% include selected_papers.liquid %}
+      <div class="scrollable-section">{% include selected_papers.liquid %}</div>
+    {% endif %}
+
+    <!-- Chip gallery -->
+    {% if site.chips != blank %}
+      <h2>
+        <a href="{{ '/chips/' | relative_url }}" style="color: inherit">chip gallery</a>
+      </h2>
+      {% include chip_gallery.liquid %}
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}

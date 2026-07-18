@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "Nanoscale Cap Measurement & DCIM Macro - FeFET(PDK: GF28SLPe)"
+title: "Nanoscale nvCap Measurement & DCIM Macro - FeFET"
+short_title: "Nanoscale nvCap Measurement & DCIM Macro - FeFET"
 description: "aF-resolution on-chip nvCAP C–V characterization across scaled geometries & 4-kb FeFET non-volatile digital compute-in-memory macro with power-gating"
 img_gds: assets/img/chips/2025_dcim_cap_measure_gds.png
 img_die: assets/img/chips/2025_dcim_cap_measure_die.png
@@ -48,7 +49,7 @@ This tapeout includes two co-fabricated structures on the GlobalFoundries 28 nm 
 
 ### Key Innovation
 
-The dual n-type FeFET voltage-divider bitcell clamps the output to ~V_DD (logic "1") or ~V_SS (logic "0") depending on the stored polarization state, enabling lossless, amplifier-free binary readout directly into the CMOS adder tree. Non-volatility supports power-gating with no weight-reload penalty — a key advantage for edge AI inference at low activity factors.
+The dual n-type FeFET voltage-divider bitcell clamps the output to ~VDD (logic "1") or ~VSS (logic "0") depending on the stored polarization state, enabling lossless, amplifier-free binary readout directly into the CMOS adder tree. Non-volatility supports power-gating with no weight-reload penalty — a key advantage for edge AI inference at low activity factors.
 
 ---
 

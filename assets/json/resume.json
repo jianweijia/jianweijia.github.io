@@ -9,7 +9,15 @@
   },
   "work": [
     {
-      "name": "Georgia Institute of Technology, US",
+      "name": "TSMC, San Jose, CA, US",
+      "position": "Circuit Research Intern",
+      "startDate": "2026-05",
+      "endDate": "present",
+      "summary": ""
+    },
+
+    {
+      "name": "Georgia Institute of Technology, Atlanta, GA, US",
       "position": "Graduate Research Assistant",
       "startDate": "2023-08",
       "endDate": "present",
@@ -17,7 +25,7 @@
     },
 
     {
-      "name": "University of Michigan - Ann Arbor, US",
+      "name": "University of Michigan - Ann Arbor, MI, US",
       "position": "Graduate Research Assistant",
       "startDate": "2022-01",
       "endDate": "2022-08",
