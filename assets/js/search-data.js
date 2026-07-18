@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-chips",
           title: "chips",
-          description: "Silicon chips I have designed and taped out.",
+          description: "Silicon chips I have taped out — most with full-flow involvement (design, synthesis, APR, and sign-off), and some with contributions to the design phase.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/chips/";
