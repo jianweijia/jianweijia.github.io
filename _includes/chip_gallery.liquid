@@ -1,5 +1,5 @@
 <div class="chip-gallery">
-  {% assign gallery_chips = site.chips | sort: "year" | reverse %}
+  {% assign gallery_chips = site.chips | sort: 'year' | reverse %}
   {% for chip in gallery_chips %}
     <a class="chip-card" href="{{ chip.url | relative_url }}">
       <div class="chip-images">
