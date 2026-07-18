@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "ACIM Macro - FeFET"
-short_title: "ACIM Macro - FeFET"
+title: "ACIM Macro for Edge AI"
+short_title: "ACIM Macro for Edge AI"
 description: "4-kb FeFET compute-in-memory macro with 64×64 crossbar array and on-chip 4-bit Flash ADC."
 img_gds: assets/img/chips/2024_fefet_acim_gds.png
 img_die: assets/img/chips/2024_fefet_acim_die.JPG

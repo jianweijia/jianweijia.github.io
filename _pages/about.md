@@ -30,7 +30,7 @@ I am currently a third-year Ph.D. student at the Georgia Institute of Technology
 </p>
 
 <p align="justify">
-My research advances AI accelerator chips through circuit-level innovations in both the analog and digital domains, including computing-in-memory (CIM), TCAM, and reconfigurable analog architectures. My work spans novel memory cell design (e.g., gain-cell eDRAM) and the use of emerging non-volatile devices (FeFET, FeCAP, RRAM, MRAM) to enhance conventional CMOS circuits.
+<mark>My research advances AI accelerator chips through cross-domain co-design of analog, digital, and memory circuits, including computing-in-memory (CIM), in-memory search (CAM/TCAM), and reconfigurable analog architectures.</mark> My work spans novel memory cell design (e.g., gain-cell eDRAM) and the use of emerging non-volatile devices (FeFET, FeCAP, RRAM, MRAM) to enhance conventional CMOS circuits.
 </p>
 
 <p align="justify">

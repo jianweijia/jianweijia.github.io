@@ -53,10 +53,10 @@ h2.bibliography {
   margin-top: 2rem;           /* 适当增加与上一组的间距 */
 }
 
-/* chip gallery badge 跟随主题色 */
+/* chip badge 跟随主题色（用 !important 覆盖 MDBootstrap 的紫色 #a6c !important） */
 .badge-secondary {
-  background-color: var(--global-theme-color);
-  color: #fff;
+  background-color: var(--global-theme-color) !important;
+  color: #fff !important;
 }
 
 /* 让 publications 内容列占满剩余宽度（与 news 对齐）*/

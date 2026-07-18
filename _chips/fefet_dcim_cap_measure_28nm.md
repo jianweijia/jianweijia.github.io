@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Nanoscale nvCap Measurement & DCIM Macro - FeFET"
-short_title: "Nanoscale nvCap Measurement & DCIM Macro - FeFET"
+title: "Nanoscale nvCap Measurement & DCIM Macro for Edge AI"
+short_title: "Nanoscale nvCap Measurement & DCIM Macro for Edge AI"
 description: "aF-resolution on-chip nvCAP C–V characterization across scaled geometries & 4-kb FeFET non-volatile digital compute-in-memory macro with power-gating"
 img_gds: assets/img/chips/2025_dcim_cap_measure_gds.png
 img_die: assets/img/chips/2025_dcim_cap_measure_die.png

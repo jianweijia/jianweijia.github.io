@@ -42,7 +42,7 @@ function progressBarSetup() {
  * how much the user has scrolled from the top
  */
 function getCurrentScrollPosition() {
-  return $(window).scrollTop();
+  return window.scrollY || document.documentElement.scrollTop;
 }
 
 function initializeProgressElement() {
@@ -61,7 +61,10 @@ function initializeProgressElement() {
  * This is the distance the user can scroll
  */
 function getDistanceToScroll() {
-  return $(document).height() - $(window).height();
+  // Use documentElement metrics so the ratio stays correct under `body { zoom }`
+  // ($(document).height() and $(window).scrollTop() disagree when the body is zoomed).
+  const doc = document.documentElement;
+  return doc.scrollHeight - doc.clientHeight;
 }
 
 function resizeProgressBar() {

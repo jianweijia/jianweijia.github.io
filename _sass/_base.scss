@@ -1647,6 +1647,20 @@ p[align="justify"] {
   margin-bottom: 0.55rem;
 }
 
+// highlighted text (<mark>) — soft Apple light-blue tint, wraps cleanly across lines
+mark {
+  background-color: rgba(0, 122, 255, 0.16); // translucent Apple blue (#007aff)
+  color: inherit;
+  padding: 0.05em 0.22em;
+  border-radius: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+html[data-theme="dark"] mark {
+  background-color: rgba(41, 151, 255, 0.28); // translucent blue for dark mode
+}
+
 // smoother, springier hover transitions site-wide
 a,
 .card,
