@@ -1719,3 +1719,29 @@ a,
 .chip-card {
   transition-timing-function: cubic-bezier(0.28, 0.11, 0.32, 1);
 }
+
+/*******************************************************************************
+ * Windows-only sizing nudge
+ * Windows renders the page a bit smaller than macOS (system text metrics +
+ * display scaling), which makes images look oversized relative to text.
+ * Trim image sizes on Windows only so the image-to-text proportion matches the
+ * macOS design. macOS is untouched. Tune the numbers to taste.
+ ******************************************************************************/
+
+html.os-windows {
+  .chip-gallery .chip-thumb {
+    width: 116px; // macOS: 130px
+    height: 116px;
+  }
+
+  .chip-strip .chip-strip-media .card-img {
+    min-height: 150px;
+    max-height: 190px; // macOS: 170–220px
+  }
+}
+
+@media (min-width: 576px) {
+  html.os-windows .profile {
+    width: 29%; // macOS: 34% (smaller profile photo)
+  }
+}
