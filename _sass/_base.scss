@@ -757,6 +757,37 @@ footer.sticky-bottom {
   }
 }
 
+// Thin, hover-revealed scrollbars for the homepage scroll areas.
+// macOS overlays & auto-hides scrollbars; Windows/Linux show a persistent bar —
+// this hides the thumb when idle and reveals it on hover, so both look consistent.
+.scrollable-section,
+.news .table-responsive {
+  scrollbar-width: thin; // Firefox
+  scrollbar-color: transparent transparent; // Firefox: hide thumb when idle
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent; // invisible when idle
+    border-radius: 8px;
+  }
+
+  &:hover {
+    scrollbar-color: rgba(120, 120, 128, 0.5) transparent; // Firefox on hover
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(120, 120, 128, 0.5); // reveal on hover
+    }
+  }
+}
+
 // Chip gallery (homepage): each chip is a card with GDS + die-photo thumbnails
 .chip-gallery {
   margin-top: 1rem;
@@ -1598,8 +1629,17 @@ body {
 }
 
 body {
-  // SF Pro on Apple devices, graceful system fallbacks elsewhere
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "Segoe UI", Roboto, Arial, sans-serif;
+  // Inter first so macOS / Windows / Linux all render the same typeface & metrics;
+  // system fonts are only a fallback if the web font fails to load
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.01em;
