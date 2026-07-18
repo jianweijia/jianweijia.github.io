@@ -1,12 +1,13 @@
 <!-- Metadata, OpenGraph and Schema.org -->
 {% include metadata.liquid %}
 
-<!-- Inter web font: renders identically across macOS / Windows / Linux -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Self-hosted Inter font: identical across macOS / Windows / Linux, no external CDN -->
 <link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+  rel="preload"
+  href="{{ '/assets/fonts/inter/inter-latin-variable.woff2' | relative_url }}"
+  as="font"
+  type="font/woff2"
+  crossorigin
 >
 
 <!-- Bootstrap & MDB -->

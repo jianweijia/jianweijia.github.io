@@ -2,6 +2,17 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// Self-hosted Inter (variable, latin) — loads from our own domain, so it works
+// on every network (incl. where Google Fonts is blocked) and every OS renders
+// the same typeface.
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/inter/inter-latin-variable.woff2") format("woff2");
+}
+
 // Typography
 
 p,
