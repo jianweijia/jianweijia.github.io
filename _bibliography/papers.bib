@@ -114,6 +114,30 @@
   }
 
 
+@ARTICLE{matrixa5,
+  author={Shon, Minji and Lim, Seongkwang and Kwak, Jungyoun and Jia, Jianwei and Liu, Haomei and Yu, Shimeng},
+  journal={IEEE Journal on Exploratory Solid-State Computational Devices and Circuits},
+  abbr={JXCDC},
+  title={MATRIX-A5: An Open-Source CFET PDK with CFlex Track-Mixing Libraries for RTL-to-GDSII DTCO},
+  year={2026},
+  abstract={As CMOS scaling extends beyond gate-all-around (GAA) nanosheet (NS) transistors, the complementary field-effect transistor (CFET) is a leading candidate for sub-1-nm nodes. To date, no open-source process design kit (PDK) is available to support a complete register-transfer-level (RTL) to GDSII flow on a CFET device architecture, making design-technology co-optimization (DTCO) impractical for academic researchers. This work introduces MATRIX-A5, an open-source predictive sequential-CFET PDK for pathfinding at the A5 node, which allows a full RTL-to-GDSII flow in a commercial EDA eco-system. Five sequential-CFET standard-cell libraries, benchmarked against a GAA nanosheet baseline library, cover the design freedom that sequential CFET provides, including independent NMOS and PMOS nanosheet sizing, and a CFET-flexible (CFlex) track-mixing methodology mixes nanosheet widths at a common row height or across hybrid row heights. A RISC-V core and systolic array taken through the full flow across the libraries quantify how each sequential CFET DTCO choice trades off among area, power, leakage, and frequency metrics.},
+  keywords={Backside power delivery network;complementary field-effect transistor (CFET);design technology co-optimization (DTCO);process design kit (PDK);standard-cell library},
+  doi={10.1109/JXCDC.2026.3744406},
+  note={Early Access}
+  }
+
+@ARTICLE{2026sscl,
+  author={Kong, Yuyao and Liu, Haomei and Jia, Jianwei and Yu, Shimeng},
+  journal={IEEE Solid-State Circuits Letters},
+  abbr={SSCL},
+  title={A 28nm Mixed-Signal Hybrid SAT Solver with Continuous-Time Convergence and WalkSAT-Inspired Discrete Variable Flips},
+  year={2026},
+  abstract={Continuous-time (CT)-based Boolean satisfiability (SAT) solvers exploit parallel analog dynamics for fast energy minimization but may converge to nonsatisfying local minima. Discrete-time (DT) local search improves solution-space exploration but requires clocked iterations. This work presents a 28nm mixed-signal hybrid CT-DT SAT solver that employs a fully parallel CT engine for local convergence and invokes WalkSAT-inspired variable flips following an unsuccessful CT phase. A first-order clause-penalty gradient is mapped to signed literal-branch currents and accumulated at 50 shared variable nodes, while a programmable matrix supports problems with up to 50 variables and 218 three-literal clauses. With 20 hybrid iterations and up to 10 flips per iteration, the single-attempt success rate without random restarts improves from 25.3% to 88.1% for uf20-91 and from 4.9% to 47.8% for uf50-218. The 0.143mm² prototype achieves 100% measured solvability over 1000 instances of each benchmark set, with mean time-to-solution values of 0.257/2.14μs and energy-to-solution values of 0.32/4.21nJ for 20-/50-variable problems, respectively.},
+  keywords={Combinatorial optimization problem (COP);Boolean satisfiability (SAT);Continuous-time (CT);discrete-time (DT);Mixed-signal integrated circuits},
+  doi={10.1109/LSSC.2026.3746968},
+  note={Early Access}
+  }
+
 @ARTICLE{10852295,
   author={Vadlamani, Madhav and Jia, Jianwei and Xie, Tian and Luo, Yuan-Chun and Lee, Junmo and Li, Shaolan and Yu, Shimeng},
   journal={IEEE Electron Device Letters}, 
@@ -191,7 +215,7 @@
   note={Accepted}
   }
 
-@INPROCEEDINGS{2026icons,
+@INPROCEEDINGS{10.1145/3822454.3822472,
   author={Megginson, Parker and Vadlamani, Madhav and Jia, Jianwei and Chapman, G. William and Cardwell, Suma G. and Yu, Shimeng},
   booktitle={2026 ACM International Conference on Neuromorphic Systems (ICONS)},
   abbr={ICONS},
@@ -199,7 +223,21 @@
   year={2026},
   month={August},
   address={Chicago, IL, USA},
-  note={Accepted}
+  publisher={Association for Computing Machinery},
+  pages={133-141},
+  abstract={This work presents a charge-domain leaky-integrate-and-fire (LIF) neuron circuit that leverages ferroelectric non-volatile capacitors (nvCAPs) to achieve multiple tunable parameters for enhanced configurability in spiking neural networks (SNNs). Key to its innovation is the use of nvCAPs not merely as non-volatile storage, but as primitives shaping neural dynamics and communication by controlling (i) membrane dynamics, (ii) refractory period, and (iii) synaptic output weight. Unlike current-domain neurons, the proposed architecture emits spikes as quantized charge packets, enabling weighted distribution to multiple downstream nodes with negligible static output power. We demonstrate the neuron's functionality with circuit simulations in a 28-nm CMOS process using experimentally calibrated nvCAP models, showing how nvCAP programming alters the membrane time constant and spike magnitude. A speed-adaptable SNN classification study on the UCI-HAR dataset demonstrates that programmable membrane time constants can preserve classification performance across varying input temporal scales without retraining. Benchmarking against prior LIF neuron implementations shows that the proposed design provides a balanced combination of compactness, low spike energy, and multi-parameter programmability while uniquely integrating charge-domain operation with non-volatile neuron tuning. This work establishes a pathway toward reconfigurable and energy-efficient neuromorphic hardware by embedding non-volatile memory elements directly into the core analog dynamics of the spiking neuron.},
+  keywords={leaky-integrate-and-fire neuron;spiking neural networks;ferroelectric capacitor;charge-domain computing;neuromorphic},
+  doi={10.1145/3822454.3822472}
+}
+
+@INPROCEEDINGS{11703450,
+  author={Chen, Matthew and Waqar, Faaiq and Jia, Jianwei and Garg, Vaidehi and Yu, Shimeng},
+  booktitle={2026 IEEE 34th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM)},
+  abbr={FCCM},
+  title={Non-Volatile FPGAs and CIM Enabled by Dual-FeFET Memory in 28nm Foundry Process},
+  year={2026},
+  pages={329},
+  doi={10.1109/FCCM68464.2026.11703450}
 }
 
 @INPROCEEDINGS{11043817,
